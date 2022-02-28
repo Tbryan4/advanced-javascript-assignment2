@@ -1,10 +1,16 @@
 import React from 'react'
+import {Container} from './styles'
+import {SidebarLogin} from '../sidebar'
+import {Main} from '../main'
 
- function login(props) {
+ function Login(props) {
   return (
-    <div>login</div>
-    // https://www.youtube.com/watch?v=I5_T547tHf0
+    <Container>
+      <SidebarLogin/>
+      <Main/>
+    </Container>
+  
   )
 }
 
-export default login
+export default Login

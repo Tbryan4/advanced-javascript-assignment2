@@ -1,22 +1,24 @@
 import React from 'react'
 import {Link} from "react-router-dom"
-import {login} from '../../components/loginprompt/login'
+import { Login } from '../../components/loginprompt'
+
+
 
 // rfc for shortcut
+
 
 function LoginPage(props) {
     return (
         <>  
-        
-            <header>
+        <Login/>
+            {/* <header>
                 <h1>LoginPage</h1>
             </header>
             <ul>
                 <li>
                     <Link to="/dashboard">Sign Out</Link>
-                    <login/>
                 </li>
-            </ul>
+            </ul> */}
         </>
     );
 }

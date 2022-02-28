@@ -9,6 +9,17 @@ const Container = styled.div `
     width: 100vw;
     height: 100vh;
     display: flex;
+    justify-content: center;
+
+
+    h1 {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-shadow: 1px 1px 3px whitesmoke;
+      color: white;
+      
+    }
 `
 
 export {
