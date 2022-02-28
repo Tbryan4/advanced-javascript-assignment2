@@ -8,8 +8,6 @@ function DashBoardApp(props) {
     return (
        <>
            <AppBar/>
-           <ul>
-                </ul>
        </>
     );
 }
