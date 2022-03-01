@@ -1,7 +1,7 @@
 import React from 'react'
 import {IoEllipsisVertical,IoPersonCircleOutline, IoMailOpenOutline, IoNotificationsOutline} from 'react-icons/io5'
 import {AppBarStyles,AppBarItems,AppBarItemGroup,AppBarItem} from './styles'
-import {IconButton} from '../ui/buttons'
+import {IconButton} from '../../ui/buttons'
 import {Link} from "react-router-dom"
 
 

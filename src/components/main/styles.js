@@ -14,11 +14,17 @@ const Container = styled.div `
 
     h1 {
       font-family: 'Courier New', Courier, monospace;
-      font-size: 1.3rem;
+      font-size: 2rem;
       font-weight: 600;
-      text-shadow: 1px 1px 3px whitesmoke;
-      color: white;
-      
+      text-shadow: 1px 1px 3px black;
+      color: white; 
+      cursor: pointer;
+    }
+
+    h1:hover {
+      text-shadow: 3px 3px 8px black;
+      font-size: 2.1rem;
+      transition: 0.8s;
     }
 `
 

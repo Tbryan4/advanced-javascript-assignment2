@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 import { Login } from '../../components/loginprompt'
+import {auth} from "./../../libs/firebase"
 
 
 
@@ -8,6 +9,7 @@ import { Login } from '../../components/loginprompt'
 
 
 function LoginPage(props) {
+    console.log(auth)
     return (
         <>  
         <Login/>
