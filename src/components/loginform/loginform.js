@@ -3,7 +3,7 @@ import {Container,LoginFormStyles,FormControl,ForgotPassword,AlternativeSignIn} 
 import {Label} from './../../ui/forms/label'
 import {Input} from './../../ui/forms/input'
 import {SubmitButton} from '../../ui/buttons'
-import {Link} from "react-router-dom"
+import {Link, Navigate} from "react-router-dom"
 
 
 
@@ -14,8 +14,10 @@ import {Link} from "react-router-dom"
   const [password,setPassword] = useState("")
 
   function onLoginRequest(e) {
-    console.log(email,password)
 
+      
+      console.log(email,password)
+      e.preventDefault();
   }
   return (
     <Container>
@@ -26,13 +28,15 @@ import {Link} from "react-router-dom"
             <Label color="black" htmlFor="email">Email</Label>
             <Input required placeholder="ShoeLocker@gmail.com" id="email"
             onChange={(e)=>setEmail(e.target.value)}
+            type="email"
             />
           </FormControl>
 
           <FormControl>
             <Label color="black" htmlFor="password">Password</Label>
-            <Input required placeholder="IloveShoes123" type="text" id="password"
-            onChange={(e) =>setPassword(e.target.value)}/>
+            <Input placeholder="IloveShoes123" type="password" id="password" 
+            onChange={(e) =>setPassword(e.target.value)}
+          />
           </FormControl>
 
           <FormControl>
@@ -49,7 +53,7 @@ import {Link} from "react-router-dom"
         </LoginFormStyles>
       </form>
 
-       {/* <ForgotPassword><p>Forgot password?</p></ForgotPassword>  */}
+      
 
       <AlternativeSignIn>
         <p>OR</p>
@@ -59,6 +63,8 @@ import {Link} from "react-router-dom"
           <a href="https://twitter.com/home?lang=en"><img src="twitter-icon.png" alt="twitter-icon"></img></a>
         </div>
       </AlternativeSignIn>
+
+     <ForgotPassword><p>Forgot password?</p></ForgotPassword>  
     </Container>
   )
 }

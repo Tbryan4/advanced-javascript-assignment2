@@ -3,10 +3,10 @@
 import styled from 'styled-components';
 
 //exsc
-const AppBarStyles = styled.nav `
+const AppBarStyles = styled.div `
     width: 100%;
     padding: 0.2rem;
-    background-color: lightgray;
+    background-color: red;
 `;
 
 const AppBarItems = styled.ul `

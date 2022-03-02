@@ -15,6 +15,8 @@ const Input = styled.input`
     }
     :focus{
         background-color: #f8fafc;
+        transform: translateY(-2px);
+        transition: 0.5s;
     }
 `;
 

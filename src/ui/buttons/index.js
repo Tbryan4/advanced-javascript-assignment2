@@ -11,6 +11,7 @@ padding: ${props => props.padding || "0.25rem 1.5rem"};;
 color: ${props => props.color || "grey"};
 font-size: ${props => props.fs || "1rem"};;
 width: ${props => props.width || "100%"};
+cursor: pointer;
 
 `;
 const IconButton = styled.button`   
@@ -24,6 +25,14 @@ const SubmitButton = styled(Button)`
     color: ${props => props.color || '#f8fafc'}; 
     font-weight: ${props => props.fw || '700'}; 
     font-size: ${props => props.fs || '14px'};
+    box-shadow: 0 0 3px 0px black;
+
+    &&:hover {
+        background-color: #A7252C;
+        color: white;
+        transition: ease-in-out 0.5s;
+        transform: translateY(-2px)
+    }
 `
 
 export {Button, IconButton, SubmitButton}

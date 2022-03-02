@@ -2,32 +2,6 @@ import styled from "styled-components"
 
 
 const Container = styled.div `
-
-
-form > input {
-  margin-top: 1rem;
-  max-width: 15rem;
-  height: 1.3rem;
-  border: none;
-  border-radius: 0.2rem;
-  background-color: #f5f5f5;
-  box-shadow: 1px 2px 4px 0.1px black;
-  padding:0 1rem;
-  transition: 0.5s;
-
-  &:hover {
-    transform: translateY(-2px)
-  }
-
-   button {
-    align-items: center;
-  }
-
-  label {
-    margin-left: 1rem;
-  }
-}
-
 h3,h2,p,label {
   font-family: 'Courier New',Courier,monospace;
 }
@@ -63,10 +37,11 @@ const FormControl = styled.div`
 const ForgotPassword = styled.div `
   p {
     color: white;
-    text-align: right;
+    text-align: center;
     font-size: 0.7rem;
     cursor: pointer;
     text-shadow: 1px 1px 1px black;
+    margin-top: 1rem;
   }
 `
 
