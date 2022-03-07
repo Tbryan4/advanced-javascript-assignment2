@@ -7,7 +7,7 @@ export const SidebarData =
 [
     {
         title: 'Dashboard',
-        path: '/dashboard',
+        path: '/Dashboard',
         icon: <IoHome/>,
         classname: 'nav-text'
     },

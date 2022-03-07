@@ -6,7 +6,7 @@ const Container = styled.div `
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    min-width: 25rem;
+    min-width: 30rem;
     backdrop-filter: blur(5rem);
     background-color: rgba(255,255,255, 0.2);
     height: 100%;

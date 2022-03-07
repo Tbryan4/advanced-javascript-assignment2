@@ -99,3 +99,8 @@ html, body {
   font-family: 'Lato', sans-serif;
 }
 
+ .main-page-header {
+  margin-left: 13rem;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+  font-size: 2rem;
+}

@@ -1,6 +1,5 @@
 import React from 'react'
-import {Link} from "react-router-dom"
-import { Login } from '../../components/loginprompt'
+import Login  from '../../components/loginprompt/Login'
 import {auth} from "./../../libs/firebase"
 
 
@@ -13,14 +12,6 @@ function LoginPage(props) {
     return (
         <>  
         <Login/>
-            {/* <header>
-                <h1>LoginPage</h1>
-            </header>
-            <ul>
-                <li>
-                    <Link to="/dashboard">Sign Out</Link>
-                </li>
-            </ul> */}
         </>
     );
 }

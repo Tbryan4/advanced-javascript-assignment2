@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
-import {IoMenu, IoCloseOutline} from 'react-icons/io5'
-import {AppBarStyles,AppBarItems,AppBarItemGroup,AppBarItem} from './styles'
-import {IconButton} from '../../ui/buttons'
+import {IoMenu, IoCloseOutline,IoMail,IoNotifications,IoPerson} from 'react-icons/io5'
+import {AppBarStyles} from './styles'
 import {Link} from "react-router-dom"
 import {SidebarData} from './SidebarData'
+
 
 
   function AppBar (props) {
@@ -13,12 +13,20 @@ import {SidebarData} from './SidebarData'
 
   return (
         <AppBarStyles>
-            <div className='nav-bar'>
+            <nav className='nav-bar'>
               <Link to='#' className='hamburger-menu'>
                 <IoMenu onClick={showSidebar}/>
-                
               </Link>
-            </div>
+
+              <Link to={"/dashboard"}><img src='logo.png' alt='logo'></img></Link>
+
+              <ul>
+                  <Link to={"/"}><li>Sign Out</li></Link>  
+                  <li><IoMail/></li>
+                  <li><IoNotifications/></li>
+                  <li><IoPerson/></li>
+              </ul>
+            </nav>
             <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
               <ul className='nav-items' onClick={showSidebar}>
                 <li className='navbar-toggle'>

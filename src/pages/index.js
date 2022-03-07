@@ -1,3 +1,7 @@
 export {default as DashBoardPage} from './dashboard/DashboardPage'
 export {default as LoginPage} from './login/LoginPage'
 export {default as PageNotFound} from './404/PageNotFound'
+export {default as Orders} from './Orders/Orders'
+export {default as Products} from './Products/Products'
+export {default as Reviews} from './Reviews/Reviews'
+export {default as Users} from './Users/Users'

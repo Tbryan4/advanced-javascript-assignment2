@@ -11,9 +11,30 @@ const AppBarStyles = styled.div `
         background-color: crimson;
         height: 4rem;
         display: flex;
-        justify-content: start;
+        justify-content: space-between;
         align-items: center;
 
+        ul{
+            display: flex ; 
+            justify-content: space-between ;
+            width: 13rem ;
+            color:white;
+            list-style:none ;
+            margin-right: 1rem ;
+        }
+        
+        li {
+            cursor:pointer;
+        }
+
+        a {
+            color: white ;
+            text-decoration: none ;
+        }
+
+        img {
+            width: 3rem ;
+        }
     }
 
     .hamburger-menu {
@@ -63,7 +84,6 @@ const AppBarStyles = styled.div `
         height: 100%;
         display: flex;
         align-items: center;
-       
         border-radius:4px;
     }
 
