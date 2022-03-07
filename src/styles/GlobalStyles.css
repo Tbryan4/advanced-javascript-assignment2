@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 /* css code reset */
 html,
 body,
@@ -89,3 +91,11 @@ html, body {
   height: 100%;
 }
 /* end css code reset */
+
+* {
+  box-sizing:  border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
