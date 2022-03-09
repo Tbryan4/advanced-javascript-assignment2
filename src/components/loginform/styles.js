@@ -19,6 +19,7 @@ const LoginFormStyles = styled.section`
 const FormControl = styled.div`
   margin: 1.25rem 0;
   width: 20rem ;
+  
 
  div {
    display: flex;

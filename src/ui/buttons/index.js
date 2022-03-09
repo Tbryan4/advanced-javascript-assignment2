@@ -27,6 +27,7 @@ const SubmitButton = styled(Button)`
     font-weight: ${props => props.fw || '700'}; 
     font-size: ${props => props.fs || '14px'};
     box-shadow: 0 0 3px 0px black;
+    width:${props => props.width || '320px'} ;
 
     &&:hover {
         background-color: #A7252C;
