@@ -1,6 +1,5 @@
 import React from "react";
 import {Container, ContainerFlex,HomeLink} from './styles'
-import { Button } from "../../ui/buttons";
 import { Link } from "react-router-dom";
 
 

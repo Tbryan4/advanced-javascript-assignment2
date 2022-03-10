@@ -1,5 +1,5 @@
 import React from "react";
-import {Container,LogoContainer,Form} from './styles'
+import {Container,LogoContainer} from './styles'
 import sitelogo from '../../Assets/logo.png'
 import { LoginForm } from "../loginform";
 
