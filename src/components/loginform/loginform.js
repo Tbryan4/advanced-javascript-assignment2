@@ -5,6 +5,10 @@ import {Input} from './../../ui/forms/input'
 import {SubmitButton} from '../../ui/buttons'
 import {Link} from "react-router-dom"
 
+//firebase imports
+import {signInWithEmailAndPassword} from "firebase/auth"
+import {auth} from './../../libs/firebase'
+
 
 
  function LoginForm({props}) {
@@ -16,7 +20,7 @@ import {Link} from "react-router-dom"
   function onLoginRequest(e) {
 
       
-      console.log(email,password)
+
       e.preventDefault();
   }
   return (
