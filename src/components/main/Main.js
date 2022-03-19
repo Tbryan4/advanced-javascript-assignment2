@@ -5,7 +5,6 @@ import {Container} from './styles'
  function Main(props) {
   return (
     <Container>
-     <h1>LACE UP</h1>
     </Container>
   
   )

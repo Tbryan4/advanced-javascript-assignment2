@@ -6,7 +6,7 @@ const Container = styled.div `
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    min-width: 30rem;
+    min-width: 35rem;
     backdrop-filter: blur(5rem);
     background-color: rgba(255,255,255, 0.2);
     height: 100%;
@@ -17,13 +17,13 @@ const LogoContainer = styled.div `
 
 font-family: 'Courier New', Courier, monospace;;
   img {
-    width: 6rem;
+    width: 6.5rem;
     margin-left: 2.5rem; 
   }
 
   h3 {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   span {
@@ -36,6 +36,10 @@ const Form = styled.form `
 h3 {
   margin-bottom:5rem;
 }
+
+h2 {
+    font-size:1rem;
+  }
 `
 
 export {
