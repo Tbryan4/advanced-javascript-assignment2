@@ -27,10 +27,13 @@ function DashBoardApp(props) {
         })
     if(isUser) { 
         return (
-        <>
-            <AppBar/>     
-            <Panel></Panel>    
-        </>
+            <>
+                <AppBar>
+                </AppBar>   
+                <Panel/>
+                
+            </>
+      
     )
 }else {
         return null

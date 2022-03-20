@@ -13,9 +13,8 @@ const Wrapper = styled.div `
     }
     `
     const Location = styled.div `
-    h1 {
+    h2 {
         font-family: 'Times New Roman', Times, serif ;
-        margin-left: 19rem;
         margin-bottom: 2rem ;
         margin-top: 4rem ;
         font-size: 1.3rem ;
@@ -26,12 +25,25 @@ const Wrapper = styled.div `
     `
 
     const Container = styled.div `
-        
+        background-color: white;
+        margin-left: 16rem;
+        margin-right: 2rem;
+        height: 80vh;
+        border-radius: 2px;
+        box-shadow: 1px 1px 10px 0px #000000;
     `
+
+    
+    const PannelBody  = styled.div`
+      
+    `;
+    
+    export default PannelBody ;
 
 
 export {
     Wrapper,
     Location,
-    Container  
+    Container,
+    PannelBody
   }
