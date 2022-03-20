@@ -1,4 +1,7 @@
 import React, {useState} from 'react'
+
+import { signOut } from 'firebase/auth'
+import {auth} from 'libs/firebase'
 import {IoMenu, IoCloseOutline,IoMail,IoNotifications,IoPerson} from 'react-icons/io5'
 import {AppBarStyles} from './styles'
 import {Link} from "react-router-dom"
@@ -11,6 +14,11 @@ import {SidebarData} from './SidebarData'
     const [sidebar,setSidebar] = useState(true)
     const showSidebar = () => setSidebar(!sidebar)
 
+    function onLogoutRequest(e) {
+      signOut(auth)
+      //sets user to sign out which means it will send the user to the login page
+    }
+
   return (
         <AppBarStyles>
             <nav className='nav-bar'>
@@ -21,7 +29,7 @@ import {SidebarData} from './SidebarData'
               <Link to={"/dashboard"}><img src='logo.png' alt='logo'></img></Link>
 
               <ul>
-                  <Link to={"/"}><li>Sign Out</li></Link>  
+                  <li onClick={onLogoutRequest}>Sign Out</li> 
                   <li><IoMail/></li>
                   <li><IoNotifications/></li>
                   <li><IoPerson/></li>
