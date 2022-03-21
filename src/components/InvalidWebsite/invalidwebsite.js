@@ -1,8 +1,11 @@
 import React, {useState} from "react";
-import {Container, ContainerFlex,HomeLink} from './styles'
+
+import {Container, ContainerFlex,LeftContainer,RightContainer} from './styles'
 import { Link } from "react-router-dom";
 import { onAuthStateChanged } from 'firebase/auth'
 import {auth} from 'libs/firebase'
+
+import { Button } from "ui/buttons";
 
 
 
@@ -23,18 +26,24 @@ import {auth} from 'libs/firebase'
         <>
         <Container>
             <ContainerFlex>
-                <img src='404-image.jpg' alt='404.jpg'></img>
-                <div>
-                    <h1>404</h1>
-                    {
-          //if there is a user link to the dashboard
-          //if there isnt a user link back to homepage
-          isUser? <Link className="HomeLink" to={"/dashboard"}>back to safety</Link> : <Link to={"/"}>back to safety</Link>
-        }
-                </div>
+                <LeftContainer>
+                 <div> 
+                   <img src="jordan-404-image.png" alt="jordan shoes"></img>
+                   </div>
+                </LeftContainer>
+                <RightContainer>
+                    <div>
+                      <h1>404</h1>
+                      <p>PAGE NOT FOUND :(</p>
+                      {
+                      //if there is a user link to the dashboard
+                      //if there isnt a user link back to homepage
+                      isUser? <Link to={"/dashboard"}><Button bc="crimson" width="10rem">Back To Safety</Button></Link> : <Link to={"/"}><Button bc="crimson" width="10rem">Back To Safety</Button></Link>
+                      }
+                      
+                    </div>
+                </RightContainer>
             </ContainerFlex>
-
-            <HomeLink></HomeLink>
         </Container>
        
         

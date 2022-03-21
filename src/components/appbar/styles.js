@@ -53,6 +53,7 @@ const AppBarStyles = styled.div `
         top: 0;
         left: -100%;
         transition: 1s;
+        box-shadow: 0px 0px 6px black;
     }
 
     .nav-text {

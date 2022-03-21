@@ -11,6 +11,7 @@ padding: ${props => props.padding || "0.25rem 1.5rem"};;
 color: ${props => props.color || "white"};
 font-size: ${props => props.fs || "1rem"};;
 width: ${props => props.width || "1rem"};
+height: ${props => props.height || "3rem"};
 
 cursor: pointer;
 

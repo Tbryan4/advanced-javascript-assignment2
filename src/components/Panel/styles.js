@@ -25,12 +25,12 @@ const Wrapper = styled.div `
     `
 
     const Container = styled.div `
-        background-color: white;
+        background-color:  #ececec;
         margin-left: 16rem;
         margin-right: 2rem;
         height: 80vh;
         border-radius: 2px;
-        box-shadow: 1px 1px 10px 0px #000000;
+        box-shadow: 1px 1px 5px 0px #000000;
     `
 
     
