@@ -27,7 +27,7 @@ Button {
 
 Button:hover {
     width: 11rem;
-    height: 4rem;
+    height: 3.5rem;
     transition: 0.5s ease-in-out;
     background-color: white;
     color: black;

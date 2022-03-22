@@ -13,11 +13,15 @@ const Wrapper = styled.div `
     }
     `
     const Location = styled.div `
+
+    margin-top: 4rem ;
     h2 {
         font-family: 'Times New Roman', Times, serif ;
-        margin-bottom: 2rem ;
-        margin-top: 4rem ;
-        font-size: 1.3rem ;
+        padding: 1rem;
+        font-size: 1.0rem ;
+        align-items: center;
+        color: #0000EE;
+        font-family:Arial, Helvetica, sans-serif;
         }
     a {
         text-decoration:none ;
@@ -25,10 +29,10 @@ const Wrapper = styled.div `
     `
 
     const Container = styled.div `
-        background-color:  #ececec;
+        background-color:  #f6f6f6;
         margin-left: 16rem;
-        margin-right: 2rem;
-        height: 80vh;
+        margin-right:3.5rem;
+        height: 82vh;
         border-radius: 2px;
         box-shadow: 1px 1px 5px 0px #000000;
     `
@@ -37,7 +41,14 @@ const Wrapper = styled.div `
     const PannelBody  = styled.div`
       
     `;
+
+    const HeaderContainer = styled.div `
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
     
+    `
+
     export default PannelBody ;
 
 
@@ -45,5 +56,6 @@ export {
     Wrapper,
     Location,
     Container,
-    PannelBody
+    PannelBody,
+    HeaderContainer
   }

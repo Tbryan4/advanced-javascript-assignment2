@@ -1,20 +1,23 @@
 import React from 'react'
-import { Location, Container,PannelBody } from './styles'
+import { Link } from 'react-router-dom'
+import { Location, Container,PannelBody,HeaderContainer } from './styles'
 
  function Panel(title, ...props) {
   return (
     <>
-        
-        <Container>
-          <Location>
-            <h2>{ "Display Pannel"}</h2>
-            <p>hello</p>
-          </Location>
-          <PannelBody>
 
-          </PannelBody>
-
-        </Container>
+          <Container>
+            <Location>
+            <HeaderContainer>
+              <h2><Link to={"/Dashboard"}>Dashboard -</Link>   </h2>
+            </HeaderContainer>
+ 
+            </Location>
+            <PannelBody>
+  
+            </PannelBody>
+  
+          </Container>
     </>
   )
 }
