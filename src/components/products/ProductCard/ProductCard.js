@@ -12,7 +12,7 @@ function ProductCard ({children, ...props})  {
               <img src='air-jordan-one.png' alt='shoe'></img>
             </ShoeFlex>
             <ShoeFlex>
-              <h3>Nike X OFF-white</h3>
+              <h3>Jordan 1 - OFF white</h3>
             </ShoeFlex>
             <ShoeFlex>
               <p>The 10: Air Jordan 1 off-white - Chicago</p>
@@ -33,7 +33,7 @@ function ProductCard ({children, ...props})  {
               <img src='air-jordan-one-blue.png' alt='shoe'></img>
             </ShoeFlex>
             <ShoeFlex>
-              <h3>Nike X OFF-white</h3>
+              <h3>Jordan 1 - OFF white</h3>
             </ShoeFlex>
             <ShoeFlex>
               <p>The 10: Air Jordan 1 off-white - UNC</p>
@@ -81,7 +81,7 @@ function ProductCard ({children, ...props})  {
               <p>The 1: Air Jordan 1 - Black and Red</p>
             </ShoeFlex>
             <ShoeFlex>
-              <p className='price'>$700</p>
+              <p className='price'>$800</p>
             </ShoeFlex>
 
             <IconFlex>
@@ -103,7 +103,7 @@ function ProductCard ({children, ...props})  {
               <p>The 1: Air Jordan 1 -Brown </p>
             </ShoeFlex>
             <ShoeFlex>
-              <p className='price'>$700</p>
+              <p className='price'>$900</p>
             </ShoeFlex>
 
             <IconFlex>
