@@ -1,32 +1,40 @@
-## Advanced JavaScript Dashboard Assignment
+# SHOE LOCKER
+
+## WEBSITE CONTENT
+---
+
+Shoe Locker aims to
+
+- Allow Authenticated users to sign into the website
+- Have a clean UI/UX Design 
+- Present the user with a dashboard of basketball shoes
+- Add new Unique products to the dashboard
+- Edit products that are currently in the dashboard with new data points
+- Delete products that the user does not want in their dashboard
+- Throw a customized 404 Page error if the user tries to enter an invalid page **OR** tries to bypass the sign in page
 
 ## 404
+---
 
 Some pages in the sidebar will return a 404 error, this is intentional because I intend to allow access to these pages when the website is actually finished
 
-## Navigator
+The pages that will show a 404 error is the 
 
-return a function that gives a programming link
+- User Page,
+- Order Page,
+- Review Page
 
-## Adding The AuthStateChange Observer
+## Shoe Locker
+---
 
-Inside the DashBoardPage function start by creating a piece of state called isUser.. The default state for a firebase user is false. Nobody should be allowed to access the page unless they are logged in. Next use the useNavigate method from the react router dom package. We will use this to return unauthorized users back to the login screen.
-Create the onAuthStateChange() to check to see if there is a current logged in user. If there is then we can change the state to true.
+Shoe locker is a fake business I created that is for the Shoe Lover Niche target Audience
+
+## Product Card Design
+---
+
+The Design for this shoe is based off a cartoon design of a real shoe
+Each Shoe on the store will have a cartoon image drawn from a professional artist
+to make the website unique to others<br/>  
 
 
-  function DashBoardPage  (props){
-    const [isUser, setIsUser]= useState(false)
-    const navigator = useNavigate();
 
-    onAuthStateChanged(auth, (user) => {
-   
-        if (user) {
-            setIsUser(true)
-     
-        } else {
-            // error shouldn't get access return to the login page
-            setIsUser(false)
-            navigator('/')
-        }
-      });
-<br/>
