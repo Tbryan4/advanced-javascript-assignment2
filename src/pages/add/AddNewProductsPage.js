@@ -1,8 +1,10 @@
-import { Panel } from 'components/Panel';
+
 import React from 'react'
+
 import { AppBar } from '../../components/appbar';
-import {auth} from "../../libs/firebase"
 import {AddProductPanel} from 'components/Panel/AddProductPanel'
+import {PannelBody } from 'components/Panel/styles'
+import {ProductCard} from 'components/products/ProductCard'
 
 
 
@@ -15,6 +17,9 @@ function AddNewProductsPage(props) {
         <>  
         <AppBar></AppBar>
         <AddProductPanel title={pageName}/>
+        <PannelBody>
+            
+        </PannelBody>
         </>
     );
 }

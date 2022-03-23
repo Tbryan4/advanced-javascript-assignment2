@@ -13,14 +13,14 @@ export const SidebarData =
     },
     {
         title: 'View All Products',
-        path: '/Products',
+        path: '/all',
         icon: <IoCash/>,
         classname: 'nav-text'
     },
 
     {
         title: 'Add Products',
-        path: '/AddNewProduct',
+        path: '/add',
         icon: <IoAdd/>,
         classname: 'nav-text'
     },

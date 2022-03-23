@@ -6,7 +6,6 @@ background-color: ${props => props.bc || "red"}; ;
 border: ${props => props.border || 'none'};;
 border-radius: ${props => props.radius || "3px"};;
 margin: ${props => props.margin || "0"};
-box-shadow: 0 0 3px 0px rgb(220, 220, 220);
 padding: ${props => props.padding || "0.25rem 1.5rem"};;
 color: ${props => props.color || "white"};
 font-size: ${props => props.fs || "1rem"};;

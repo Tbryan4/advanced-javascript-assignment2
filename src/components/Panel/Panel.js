@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Location, Container,PannelBody,HeaderContainer } from './styles'
+import {ProductCard} from 'components/products/ProductCard'
 
  function Panel(props) {
   return (
@@ -14,7 +15,7 @@ import { Location, Container,PannelBody,HeaderContainer } from './styles'
  
             </Location>
             <PannelBody>
-  
+              <ProductCard/>
             </PannelBody>
   
           </Container>

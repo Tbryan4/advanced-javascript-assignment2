@@ -14,10 +14,10 @@ function App() {
         <Route path='/dashboard' element={<DashBoardPage/>}/>
         <Route path='/*' element={<PageNotFound/>}/>
         <Route path='/Orders' element={<PageNotFound/>}/>
-        <Route path='/Products' element={<Products/>}/>
+        <Route path='/all' element={<Products/>}/>
         <Route path='/Reviews' element={<PageNotFound/>}/>
         <Route path='/Users' element={<PageNotFound/>}/>
-        <Route path='/AddNewProduct' element={<AddNewProductsPage/>}/>
+        <Route path='/add' element={<AddNewProductsPage/>}/>
       </Routes>
 
       {/* SOME PAGES ARE NOT FINISHED SO THEY ARE PROGRAMMED TO DISPLAY

@@ -35,7 +35,7 @@ import {SubmitButton} from '../../ui/buttons'
       .then(userCrediental=> {
         // move dashboard page
         // use navigate() react router
-        navigator('dashboard')
+        navigator('all')
       })
       .catch(error => {
         notify(error)
