@@ -13,6 +13,18 @@ Shoe Locker aims to
 - Delete products that the user does not want in their dashboard
 - Throw a customized 404 Page error if the user tries to enter an invalid page **OR** tries to bypass the sign in page
 
+## Shoe Locker
+---
+
+Shoe locker is a fake business I created that is for the Shoe Lover Niche target Audience
+
+## Product Card Design
+---
+
+The Design for this shoe is based off a cartoon design of a real shoe
+Each Shoe on the store will have a cartoon image drawn from a professional artist
+to make the website unique to others
+
 ## 404
 ---
 
@@ -24,17 +36,6 @@ The pages that will show a 404 error is the
 - Order Page,
 - Review Page
 
-## Shoe Locker
----
-
-Shoe locker is a fake business I created that is for the Shoe Lover Niche target Audience
-
-## Product Card Design
----
-
-The Design for this shoe is based off a cartoon design of a real shoe
-Each Shoe on the store will have a cartoon image drawn from a professional artist
-to make the website unique to others<br/>  
 
 
 

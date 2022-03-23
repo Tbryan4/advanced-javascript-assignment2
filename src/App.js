@@ -1,7 +1,8 @@
 
+import EditPage from 'pages/edit/EditPage';
 import React  from 'react';
 import {Routes,Route} from "react-router-dom"
-import {DashBoardPage, LoginPage, PageNotFound,Orders,Products,Reviews,Users,AddNewProductsPage} from './pages';
+import {DashBoardPage, LoginPage, PageNotFound,Orders,Products,Reviews,Users,AddNewProductsPage,edit} from './pages';
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Route path='/Reviews' element={<PageNotFound/>}/>
         <Route path='/Users' element={<PageNotFound/>}/>
         <Route path='/add' element={<AddNewProductsPage/>}/>
+        <Route path='/edit' element={<EditPage/>}/>
       </Routes>
 
       {/* SOME PAGES ARE NOT FINISHED SO THEY ARE PROGRAMMED TO DISPLAY

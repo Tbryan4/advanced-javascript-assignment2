@@ -1,5 +1,5 @@
 import React from 'react';
-import {IoHome,IoPerson,IoCash,IoStar,IoBag,IoAdd} from 'react-icons/io5'
+import {IoHome,IoPerson,IoCash,IoStar,IoBag,IoAdd,IoCreateOutline} from 'react-icons/io5'
 
 
  
@@ -22,6 +22,13 @@ export const SidebarData =
         title: 'Add Products',
         path: '/add',
         icon: <IoAdd/>,
+        classname: 'nav-text'
+    },
+
+    {
+        title: 'Edit Products',
+        path: '/edit',
+        icon: <IoCreateOutline/>,
         classname: 'nav-text'
     },
     {
