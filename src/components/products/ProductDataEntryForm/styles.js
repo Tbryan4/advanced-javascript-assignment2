@@ -2,12 +2,23 @@ import styled from 'styled-components';
 
 
 
-const ProductDataEntryFormStyles  = styled.div`
-      /* styles */
-      h2{
-          font-size:1.75rem;
-          color:#374151;
-      }
+const ProductDataEntryFormStyles  = styled.form`
+      width: 380px;
 `;
 
-export {ProductDataEntryFormStyles}
+const ProductImage  = styled.div`
+      
+`;
+
+const ProductName  = styled.div`
+      
+`;
+
+const ProductPrice  = styled.div`
+      
+`;
+const ProductDescription  = styled.div`
+      
+`;
+
+export {ProductDataEntryFormStyles,ProductImage,ProductName,ProductPrice,ProductDescription}

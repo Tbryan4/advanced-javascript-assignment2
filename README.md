@@ -1,5 +1,9 @@
 ## Advanced JavaScript Dashboard Assignment
 
+## 404
+
+Some pages in the sidebar will return a 404 error, this is intentional because I intend to allow access to these pages when the website is actually finished
+
 ## Navigator
 
 return a function that gives a programming link

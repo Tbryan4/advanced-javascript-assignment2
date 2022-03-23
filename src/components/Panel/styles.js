@@ -18,9 +18,8 @@ const Wrapper = styled.div `
     h2 {
         font-family: 'Times New Roman', Times, serif ;
         padding: 1rem;
-        font-size: 1.0rem ;
+        font-size: 1rem ;
         align-items: center;
-        color: #0000EE;
         font-family:Arial, Helvetica, sans-serif;
         }
     a {
@@ -46,7 +45,10 @@ const Wrapper = styled.div `
     display: flex;
     justify-content: flex-end;
     background-color: white;
-    
+
+    span {
+        cursor: pointer;
+    }
     `
 
     export default PannelBody ;

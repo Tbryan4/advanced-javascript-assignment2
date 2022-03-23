@@ -1,20 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Location, Container,PannelBody,HeaderContainer } from './styles'
+import {ProductEditor} from 'components/products/ProductEditor'
 
- function Panel(props) {
+ function AddProductPanel(title, ...props) {
   return (
     <>
 
           <Container>
             <Location>
             <HeaderContainer>
-              <h2><Link to={"/Dashboard"}>{props.title}</Link>   </h2>
+              <h2><Link to={"/Dashboard"}>Dashboard</Link> {'>'} <span>Add Products</span></h2>
             </HeaderContainer>
  
             </Location>
             <PannelBody>
-  
+                <ProductEditor/>
             </PannelBody>
   
           </Container>
@@ -22,4 +23,4 @@ import { Location, Container,PannelBody,HeaderContainer } from './styles'
   )
 }
 
-export default Panel
+export {AddProductPanel}
