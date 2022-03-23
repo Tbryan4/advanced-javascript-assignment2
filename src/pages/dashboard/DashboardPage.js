@@ -5,7 +5,7 @@ import { auth } from 'libs/firebase';
 import { useNavigate } from 'react-router-dom';
 
 import { AppBar } from '../../components/appbar';
-import DashboardPanel from 'components/Panel/DashboardPanel';
+import Panel from 'components/Panel/Panel';
 
 
 
@@ -30,7 +30,7 @@ function DashBoardApp(props) {
             <>
                 <AppBar>
                 </AppBar>   
-                <DashboardPanel/>     
+                <Panel/>     
             </>
       
     )
