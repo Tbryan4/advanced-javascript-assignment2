@@ -10,11 +10,11 @@ import {AddProductPanel} from 'components/Panel/AddProductPanel'
 
 
 function AddNewProductsPage(props) {
-    console.log(auth)
+    const pageName = "Add Products"
     return (
         <>  
         <AppBar></AppBar>
-        <AddProductPanel/>
+        <AddProductPanel title={pageName}/>
         </>
     );
 }

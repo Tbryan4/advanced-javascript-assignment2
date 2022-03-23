@@ -14,7 +14,7 @@ function App() {
         <Route path='/dashboard' element={<DashBoardPage/>}/>
         <Route path='/*' element={<PageNotFound/>}/>
         <Route path='/Orders' element={<PageNotFound/>}/>
-        <Route path='/Products' element={<PageNotFound/>}/>
+        <Route path='/Products' element={<Products/>}/>
         <Route path='/Reviews' element={<PageNotFound/>}/>
         <Route path='/Users' element={<PageNotFound/>}/>
         <Route path='/AddNewProduct' element={<AddNewProductsPage/>}/>
@@ -23,7 +23,7 @@ function App() {
       {/* SOME PAGES ARE NOT FINISHED SO THEY ARE PROGRAMMED TO DISPLAY
       THE 404 PAGE IF CLICKED THIS WILL BE CHANGED LATER ON.
       WHEN READY ACTIVATE THE ROUTES BELOW */}
-      
+
       {/* <Routes>
         <Route path="/" element={<LoginPage/>}/>
         <Route path='/dashboard' element={<DashBoardPage/>}/>

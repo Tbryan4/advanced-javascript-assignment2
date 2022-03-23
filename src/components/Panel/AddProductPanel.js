@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { Location, Container,PannelBody,HeaderContainer } from './styles'
 import {ProductEditor} from 'components/products/ProductEditor'
 
- function AddProductPanel(title, ...props) {
+ function AddProductPanel(props) {
   return (
     <>
 

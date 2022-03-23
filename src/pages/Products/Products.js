@@ -1,6 +1,9 @@
 import React from 'react'
+
 import { AppBar } from '../../components/appbar';
 import {auth} from "./../../libs/firebase"
+import {Panel} from 'components/Panel'
+import { Link } from 'react-router-dom'
 
 
 
@@ -8,11 +11,11 @@ import {auth} from "./../../libs/firebase"
 
 
 function ProductsPage(props) {
-    console.log(auth)
+    const pageName = "View All Products"
     return (
         <>  
         <AppBar></AppBar>
-        <h1 className='main-page-header'>Products</h1>
+        <Panel title={pageName}></Panel>
         </>
     );
 }

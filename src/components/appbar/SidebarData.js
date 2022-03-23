@@ -12,7 +12,7 @@ export const SidebarData =
         classname: 'nav-text'
     },
     {
-        title: 'Products',
+        title: 'View All Products',
         path: '/Products',
         icon: <IoCash/>,
         classname: 'nav-text'

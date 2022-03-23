@@ -30,7 +30,7 @@ function DashBoardApp(props) {
             <>
                 <AppBar>
                 </AppBar>   
-                <Panel title={"Dashboard"}/>     
+                <Panel/>     
             </>
       
     )

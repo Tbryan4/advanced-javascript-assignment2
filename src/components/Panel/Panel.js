@@ -9,7 +9,7 @@ import { Location, Container,PannelBody,HeaderContainer } from './styles'
           <Container>
             <Location>
             <HeaderContainer>
-              <h2><Link to={"/Dashboard"}>{props.title}</Link>   </h2>
+              <h2><Link to={"/Dashboard"}>Dashboard</Link> {'>'}  <span>{props.title}</span>   </h2>
             </HeaderContainer>
  
             </Location>
