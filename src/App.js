@@ -2,7 +2,7 @@
 import EditPage from 'pages/edit/EditPage';
 import React  from 'react';
 import {Routes,Route} from "react-router-dom"
-import {DashBoardPage, LoginPage, PageNotFound,Orders,Products,Reviews,Users,AddNewProductsPage,edit} from './pages';
+import {DashBoardPage, LoginPage, PageNotFound,Products,AddNewProductsPage} from './pages';
 
 
 
