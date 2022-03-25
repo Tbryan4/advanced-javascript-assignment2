@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {ProductDataEntryFormStyles,ProductImage,ProductName,ProductPrice,ProductDescription} from './styles'
-import {Label,Input} from 'ui/forms'
+import {Label} from 'ui/forms'
 
 function ProductDataEntryForm ({children, ...props})  {
   return (
