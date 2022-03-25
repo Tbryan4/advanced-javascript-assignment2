@@ -4,7 +4,6 @@ import React from 'react'
 import { AppBar } from '../../components/appbar';
 import {AddProductPanel} from 'components/Panel/AddProductPanel'
 import {PannelBody } from 'components/Panel/styles'
-import {ProductCard} from 'components/products/ProductCard'
 
 
 
