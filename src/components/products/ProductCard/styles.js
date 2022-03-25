@@ -27,7 +27,6 @@ const CardContainer = styled.div `
     border-radius: 10px;
     box-shadow: 0px 0px 5px 0px black;
 
-
    
 img {
     width: 15rem;
