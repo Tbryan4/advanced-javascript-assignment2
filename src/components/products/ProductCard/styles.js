@@ -7,7 +7,7 @@ const ProductCardStyles  = styled.div`
     display: flex;
     flex-wrap:wrap;
     justify-content: space-evenly;
-    width: 98rem;
+    width: 100%;
 
     .product-card:hover {
         box-shadow: 0px 0px 15px 0px black;
@@ -22,7 +22,7 @@ const CardContainer = styled.div `
     margin-top: 2rem;
     padding: 1rem;
     background-color: ${props => props.bc || "#a62121"}; ;
-    width: 17rem;
+    width: calc(20% - 2rem);
     height: 23rem;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 0px black;
