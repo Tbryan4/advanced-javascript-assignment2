@@ -22,7 +22,7 @@ const CardContainer = styled.div `
     margin-top: 2rem;
     padding: 1rem;
     background-color: ${props => props.bc || "#a62121"}; ;
-    width: calc(20% - 2rem);
+    max-width: calc(100% - 1rem);
     height: 23rem;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 0px black;
