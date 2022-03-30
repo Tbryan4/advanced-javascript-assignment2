@@ -1,39 +1,41 @@
- import React, {useCallback} from 'react'
- import {useDropzone} from 'react-dropzone'
- import {ProductImageDropBoxStyles} from './styles';
+//  import React, {useCallback} from 'react'
+//  import {useDropzone} from 'react-dropzone'
+//  import {ProductImageDropBoxStyles} from './styles';
 
 
  function ProductImageDropBox  ({setPreviewImagePath, ...props}){
-    const onDrop = useCallback(acceptedFiles => {
-        const path = acceptedFiles[0] ;
+  //   const onDrop = useCallback(acceptedFiles => {
+  //       const path = acceptedFiles[0] ;
          
-        setPreviewImagePath(URL.createObjectURL(path))
-      }, [])
-      const {
-        getRootProps,
-        getInputProps,
+  //       setPreviewImagePath(URL.createObjectURL(path))
+  //     }, [])
+  //     const {
+  //       getRootProps,
+  //       getInputProps,
       
-        isFocused,
-        isDragAccept,
-        isDragReject,
-      } = useDropzone({ accept: 'image/jpeg,image/jpg,image/png', maxFiles:1, onDrop });
+  //       isFocused,
+  //       isDragAccept,
+  //       isDragReject,
+  //     } = useDropzone({ accept: 'image/jpeg,image/jpg,image/png', maxFiles:1, onDrop });
 
  
       
-   function workingThing(){
-     console.log("look")
-   }
+  //  function workingThing(){
+  //    console.log("look")
+  //  }
 
-     return( 
+  //    return( 
       
-        <ProductImageDropBoxStyles {...getRootProps({isFocused, isDragAccept, isDragReject})}>
-          <input {...getInputProps()} onChange={workingThing} />
-          <p>Product Image Upload</p>
-        </ProductImageDropBoxStyles>
+  //       <ProductImageDropBoxStyles {...getRootProps({isFocused, isDragAccept, isDragReject})}>
+  //         <input {...getInputProps()} onChange={workingThing} />
+  //         <p>Product Image Upload</p>
+  //       </ProductImageDropBoxStyles>
        
        
       
-     )
+  //    )
+
+  return (null)
  }
  
  export default ProductImageDropBox 
