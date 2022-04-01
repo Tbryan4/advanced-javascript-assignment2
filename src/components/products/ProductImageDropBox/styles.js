@@ -25,11 +25,11 @@ const getColor = (props) => {
     border-radius: 2px;
     border-color: ${props => getColor(props)};
     border-style: dashed;
-    background-color:#f8fafc;
+    background-color:white;
     color: #94a3b8;
     outline: none;
     transition: border .24s ease-in-out;
-    font-size:14px;
+    font-size:15px;
     margin-bottom: 1rem;
     :hover{
       border-color: cornflowerblue;

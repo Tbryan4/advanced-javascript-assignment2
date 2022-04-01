@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 
 const ProductDataEntryFormStyles  = styled.form`
-      width: 380px;
+      
+      display: flex;
+      
 
       input:focus, textarea:focus {
             border-color: crimson;
@@ -11,26 +13,44 @@ const ProductDataEntryFormStyles  = styled.form`
             outline-color: crimson;
       }
 
-      fieldset {
-            display:flex;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+      div {
+            padding-top: 1rem;
       }
+
+      margin-top: 3rem;
 `;
 
 const ProductImage  = styled.div`
+  
+      width: 500px;
       
 `;
 
 const ProductName  = styled.div`
-      flex: 3.5;
+     input {
+            height: 3rem;
+      }
 `;
 
 const ProductPrice  = styled.div`
-      flex:1.5;
+      input {
+            height: 3rem;
+      }
 `;
 const ProductDescription  = styled.div`
       
+      input {
+            height: 3.5rem;
+      }
+      
 `;
 
-export {ProductDataEntryFormStyles,ProductImage,ProductName,ProductPrice,ProductDescription}
+
+
+const FormContainer = styled.div`
+  
+`;
+
+
+
+export {FormContainer,ProductDataEntryFormStyles,ProductImage,ProductName,ProductPrice,ProductDescription}

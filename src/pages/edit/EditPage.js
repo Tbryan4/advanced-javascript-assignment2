@@ -5,7 +5,7 @@ import { auth } from 'libs/firebase';
 import { useNavigate } from 'react-router-dom';
 
 import { AppBar } from '../../components/appbar';
-import EditProductPanel from 'components/Panel/DashboardPanel';
+import { AddProductPanel } from 'components/Panel/AddProductPanel';
 
 
 
@@ -31,7 +31,7 @@ function EditPage(props) {
             <>
                 <AppBar>
                 </AppBar>   
-                <EditProductPanel title={pageName}/>     
+                <AddProductPanel title={pageName}/>   
             </>
       
     )

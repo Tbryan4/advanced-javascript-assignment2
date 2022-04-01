@@ -112,6 +112,27 @@ function ProductCard ({children, ...props})  {
             </IconFlex>
           </CardContainer>
 
+          <CardContainer className='product-card' bc='#8b4513
+'>
+            <ShoeFlex>
+              <img src='jordan-one-brown.png' alt='shoe'></img>
+            </ShoeFlex>
+            <ShoeFlex>
+              <h3>Jordan 1 - Brown</h3>
+            </ShoeFlex>
+            <ShoeFlex>
+              <p>The 1: Air Jordan 1 -Brown </p>
+            </ShoeFlex>
+            <ShoeFlex>
+              <p className='price'>$900</p>
+            </ShoeFlex>
+
+            <IconFlex>
+              <Button className='buy-now' bc="black" width="10rem" height="2.5rem" box-shadow="0" border-radius="10rem"> Buy Now </Button>
+              <IoIosStar className='icon'/>
+            </IconFlex>
+          </CardContainer>
+
 
 
 

@@ -14,7 +14,7 @@ import {ProductEditor} from 'components/products/ProductEditor'
             </HeaderContainer>
             </Location>
             <PannelBody>
-                <ProductEditor/>
+            <ProductEditor/>
             </PannelBody>
   
           </Container>
