@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Location, Container,PannelBody,HeaderContainer } from './styles'
-import {ProductEditor} from 'components/products/ProductEditor'
+import { AddProduct } from 'components/widgets/AddProduct'
 
  function AddProductPanel(props) {
   return (
@@ -14,7 +14,7 @@ import {ProductEditor} from 'components/products/ProductEditor'
             </HeaderContainer>
             </Location>
             <PannelBody>
-            <ProductEditor/>
+              <AddProduct/>
             </PannelBody>
   
           </Container>

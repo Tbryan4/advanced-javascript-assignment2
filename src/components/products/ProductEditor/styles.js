@@ -10,6 +10,11 @@ const ProductEditorStyles  = styled.div`
       justify-content: center;
       align-items: center;
       gap: 5rem;
+
+      @media (max-width: 1300px) {
+            
+            flex-direction: column;
+      }
       
 `;
 

@@ -31,9 +31,9 @@ const Wrapper = styled.div `
         background-color:  #f6f6f6;
         margin-left: 16rem;
         margin-right:3.5rem;
-        height: 100vh;
         border-radius: 2px;
         box-shadow: 1px 1px 5px 0px #000000;
+        padding-bottom: 5rem;
     `
 
     

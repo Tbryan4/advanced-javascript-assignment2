@@ -19,6 +19,7 @@ const ProductCardStyles  = styled.div`
 `;
 
 const CardContainer = styled.div `
+    margin-left: 1rem;
     margin-top: 2rem;
     padding: 1rem;
     background-color: ${props => props.bc || "#a62121"}; ;

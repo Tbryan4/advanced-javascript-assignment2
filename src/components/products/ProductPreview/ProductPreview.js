@@ -1,15 +1,17 @@
 import React from 'react';
 
-import {ProductPreviewStyles,ProductImage,ProductName,ProductPrice,ProductDescription} from './styles'
+import {ProductPreviewStyles,ProductImages,ProductName,ProductPrice,ProductDescription} from './styles'
 
 
-function ProductPreview ({children, ...props})  {
+function ProductPreview ({children,productName,productPrice,productImage,productDescription, ...props})  {
   return (
         <ProductPreviewStyles  {...props}>
-            <ProductImage><img src='jordan-404-image.png' alt='shoe preview img'></img></ProductImage>
-            <ProductName>Jordan 3 Grey</ProductName>
-            <ProductPrice>$100</ProductPrice>
-            <ProductDescription>Lorem Ipsum is simply dummy text of the printing and typesetting</ProductDescription>
+            <ProductImages>
+              <img src={productImage} alt='shoe preview img' width='320px' height='50px'></img>
+            </ProductImages>
+            <ProductName>{productName}</ProductName>
+            <ProductPrice>${productPrice}</ProductPrice>
+            <ProductDescription>{productDescription}</ProductDescription>
 
         </ProductPreviewStyles>
   )

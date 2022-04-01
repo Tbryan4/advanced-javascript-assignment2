@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const ProductDataEntryFormStyles  = styled.form`
       
       display: flex;
+      margin-bottom: 30rem;
       
 
       input:focus, textarea:focus {
@@ -18,6 +19,11 @@ const ProductDataEntryFormStyles  = styled.form`
       }
 
       margin-top: 3rem;
+
+      @media (max-width: 1300px) {
+            
+            margin-bottom: 0rem;
+          }
 `;
 
 const ProductImage  = styled.div`

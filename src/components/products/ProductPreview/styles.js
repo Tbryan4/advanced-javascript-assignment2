@@ -6,6 +6,7 @@ const ProductPreviewStyles  = styled.div`
       /* styles */
       background-color: crimson;
       height: 25rem;
+      margin-bottom: 30rem;
       width: 21rem;
 
       border-radius: 10px;
@@ -23,14 +24,21 @@ const ProductPreviewStyles  = styled.div`
         font-weight: bold;
         text-align: center;
       }
+
+      @media (max-width: 1300px) {
+            
+        margin-bottom: 1rem;
+      }
       
 `;
 
-const ProductImage = styled.div `
+const ProductImages = styled.div `
     margin: 1rem auto 0;
     width: 300px;
+   
     img {
-        width: 15rem;
+      max-width: 13rem;
+      max-height: 10rem;
         
     }
 `
@@ -60,4 +68,4 @@ const ProductDescription = styled.p`
 
 
 
-export {ProductPreviewStyles,ProductName,ProductPrice,ProductDescription,ProductImage}
+export {ProductPreviewStyles,ProductName,ProductPrice,ProductDescription,ProductImages}
