@@ -13,7 +13,7 @@ function AddProduct ({children, ...props})  {
   const [productPrice,setProductPrice] = useState('100')
   const [productImage,setProductImage]= useState({previewImage:ProductPreview, file:null})
   const [productDescription,setProductDescription] = useState('Product Description')
-  const [loading,productLoader]= useAddNewProduct()
+  // const [loading,productLoader]= useAddNewProduct()
 
   const formatter = useNumberFormat()
   
@@ -41,8 +41,8 @@ function AddProduct ({children, ...props})  {
       productDescription
     }
     setIsWriting(true)
-    productLoader(productData,productImage.file)
-    console.log(loading)
+    // productLoader(productData,productImage.file)
+    // console.log(loading)
   }
 
   if(isWriting) {
