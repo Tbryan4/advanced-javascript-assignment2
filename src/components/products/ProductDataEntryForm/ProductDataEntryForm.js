@@ -1,12 +1,14 @@
 import React from 'react';
 
-import {ProductDataEntryFormStyles,ProductImage,ProductName,ProductPrice,ProductDescription, FormContainer} from './styles'
+import {ProductDataEntryFormStyles,ProductImage,ProductName,ProductPrice,ProductDescription, FormContainer,SubmitButtonContainer} from './styles'
 import { ProductImageDropBox } from '../ProductImageDropBox';
 import {Label, Input} from 'ui/forms'
 
-function ProductDataEntryForm ({children,handleProductName,handleProductPrice,setProductImage,handleProductDescription, ...props})  {
+import { SubmitButton } from 'ui/buttons';
+
+function ProductDataEntryForm ({children,handleSubmit,handleProductName,handleProductPrice,setProductImage,handleProductDescription, ...props})  {
   return (
-        <ProductDataEntryFormStyles  {...props}>
+        <ProductDataEntryFormStyles  {...props} onSubmit={handleSubmit}>
            <FormContainer>
              <ProductImage>
               <Label>Product Image</Label>
@@ -27,6 +29,10 @@ function ProductDataEntryForm ({children,handleProductName,handleProductPrice,se
               <Label>Product Description</Label>
               <Input onChange={(e)=>handleProductDescription(e.target.value.trim())} maxLength={35}/>
              </ProductDescription>
+
+             <SubmitButtonContainer>
+              <SubmitButton> Submit </SubmitButton>
+             </SubmitButtonContainer>
            </FormContainer>
 
         </ProductDataEntryFormStyles>

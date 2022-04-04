@@ -57,6 +57,14 @@ const FormContainer = styled.div`
   
 `;
 
+const SubmitButtonContainer = styled.div `
+      display: flex;
+      justify-content: center;
+      button {
+            width: 31.2rem;
+      }
+`;
 
 
-export {FormContainer,ProductDataEntryFormStyles,ProductImage,ProductName,ProductPrice,ProductDescription}
+
+export {FormContainer,ProductDataEntryFormStyles,ProductImage,ProductName,ProductPrice,ProductDescription,SubmitButtonContainer}
