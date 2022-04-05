@@ -7,6 +7,7 @@ import {useNumberFormat} from '../../../hooks/useNumberFormat'
 import ProductPreview from 'Assets/jordan-404-image.png'
 import { EditorFeedBack } from 'components/products/EditorFeedBack';
 
+
 function AddProduct ({children, ...props})  {
 
   const defaults = {
@@ -60,7 +61,10 @@ function AddProduct ({children, ...props})  {
   }
 
   if(isWriting) {
-    return <EditorFeedBack status={loading} writeCompleted={setIsWriting}/>
+    return <>
+      <EditorFeedBack status={loading} writeCompleted={setIsWriting}/>
+      
+     </>
   }
   else {
   return (

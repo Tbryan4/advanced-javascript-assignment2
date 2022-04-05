@@ -3,6 +3,8 @@ import React from 'react';
 import {AiOutlineCloudUpload, AiOutlineCheckCircle} from "react-icons/ai"
 import {EditorFeedBackStyles,FeedBackMessage,FeedBack,FeedBackOption} from './styles'
 import { useNavigate } from 'react-router-dom';
+import { Fireworks } from 'fireworks-js/dist/react'
+
 
 import { Button } from 'ui/buttons';
 
@@ -14,14 +16,20 @@ function EditorFeedBack ({children,status,writeCompleted, ...props})  {
            
            {
              !status?
-             <FeedBack>
-             <AiOutlineCheckCircle color='d9f99d' size="12rem"/>
-             <FeedBackMessage>
-               Product Uploaded Successfully
-             </FeedBackMessage>
-           </FeedBack>
+             <>
+               <FeedBack>
+               <Fireworks/>
+               <AiOutlineCheckCircle color='d9f99d' size="12rem"/>
+               <FeedBackMessage>
+                 Product Uploaded Successfully
+               </FeedBackMessage>
+               
+             </FeedBack>
+             
+             </>
            :
            <FeedBack>
+             
              <AiOutlineCloudUpload color='d9f99d' size="12rem"/>
              <FeedBackMessage>
                Uploading new product
@@ -32,6 +40,7 @@ function EditorFeedBack ({children,status,writeCompleted, ...props})  {
           <FeedBackOption>
             <Button bc='green' width="10rem" onClick={()=> writeCompleted(false)} disabled={status}> Add Another Product </Button>
             <Button bc='black' margin="1rem" width="10rem" onClick={()=> navigator('/dashboard')}> View All Products </Button>
+            
           </FeedBackOption>
         </EditorFeedBackStyles>
   )
