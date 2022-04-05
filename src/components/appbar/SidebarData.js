@@ -1,5 +1,5 @@
 import React from 'react';
-import {IoHome,IoPerson,IoCash,IoStar,IoBag,IoAdd,IoCreateOutline} from 'react-icons/io5'
+import {IoHome,IoPerson,IoCash,IoStar,IoBag,IoAdd} from 'react-icons/io5'
 
 
  

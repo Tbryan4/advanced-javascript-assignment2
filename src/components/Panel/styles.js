@@ -41,6 +41,24 @@ const Wrapper = styled.div `
 
     `;
 
+    const DashboardPannelBody  = styled.div`
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    div {
+     width: fit-content ;
+    }
+
+    aside {
+        text-align: center;
+        margin: 22rem;
+    }
+    `;
+
+    
+
     const HeaderContainer = styled.div `
     display: flex;
     justify-content: flex-end;
@@ -59,5 +77,6 @@ export {
     Location,
     Container,
     PannelBody,
-    HeaderContainer
+    HeaderContainer,
+    DashboardPannelBody
   }
