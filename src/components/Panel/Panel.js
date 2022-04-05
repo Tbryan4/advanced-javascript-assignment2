@@ -1,9 +1,13 @@
 import React from 'react'
+
 import { Link } from 'react-router-dom'
 import { Location, Container,PannelBody,HeaderContainer } from './styles'
 import {ProductCard} from 'components/products/ProductCard'
 
+import {useGetProducts} from 'hooks/useGetProducts'
+
  function Panel(props) {
+    const productData = useGetProducts()
   return (
     <>
 
@@ -15,7 +19,7 @@ import {ProductCard} from 'components/products/ProductCard'
  
             </Location>
             <PannelBody>
-              <ProductCard/>
+              {productData? productData.map(product=><ProductCard key={product.uid} product={product}/>) : <p>Spinner react spinners</p>}
             </PannelBody>
   
           </Container>
