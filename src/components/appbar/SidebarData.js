@@ -26,12 +26,6 @@ export const SidebarData =
     },
 
     {
-        title: 'Edit Products',
-        path: '/edit',
-        icon: <IoCreateOutline/>,
-        classname: 'nav-text'
-    },
-    {
         title: 'Users',
         path: '/Users',
         icon: <IoPerson/>,

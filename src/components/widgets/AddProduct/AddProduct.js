@@ -5,15 +5,25 @@ import {AddProductStyles} from './styles'
 import { ProductEditor } from 'components/products/ProductEditor';
 import {useNumberFormat} from '../../../hooks/useNumberFormat'
 import ProductPreview from 'Assets/jordan-404-image.png'
+import { EditorFeedBack } from 'components/products/EditorFeedBack';
 
 function AddProduct ({children, ...props})  {
 
+  const defaults = {
+    description: `Product Description`,
+    name: "Product Name",
+    price: "100"
+
+  }
+
   const [isWriting, setIsWriting] = useState(false)
-  const [productName, setProductName] = useState('Product Name')
-  const [productPrice,setProductPrice] = useState('100')
+  const [productName, setProductName] = useState(defaults.name)
+  const [productPrice,setProductPrice] = useState(defaults.price)
   const [productImage,setProductImage]= useState({previewImage:ProductPreview, file:null})
-  const [productDescription,setProductDescription] = useState('Product Description')
-  // const [loading,productLoader]= useAddNewProduct()
+  const [productDescription,setProductDescription] = useState(defaults.description)
+  const [loading,productLoader]= useAddNewProduct()
+
+
 
   const formatter = useNumberFormat()
   
@@ -41,12 +51,16 @@ function AddProduct ({children, ...props})  {
       productDescription
     }
     setIsWriting(true)
-    // productLoader(productData,productImage.file)
-    // console.log(loading)
+    productLoader(productData,productImage.file)
+    setProductDescription(defaults.description)
+    setProductImage({previewImage:ProductPreview, file:null})
+    setProductName(defaults.name)
+    setProductPrice(defaults.price)
+    
   }
 
   if(isWriting) {
-    return <h1>Editor Feedback Component</h1>
+    return <EditorFeedBack status={loading} writeCompleted={setIsWriting}/>
   }
   else {
   return (
