@@ -67,19 +67,27 @@ const ShoeFlex = styled.div `
 
 const IconFlex = styled.div `
     display: flex;
-    justify-content: space-around;
+    
     align-items: center;
     margin-top: 1rem;
 
+    div {
+        display: flex;
+        margin-left: 1rem;
+    }
+
     .icon {
-        color: gold;
-        font-size: 2rem;
+        color: white;
+        font-size: 1.5rem;
         cursor: pointer;
+        margin-left: 0.5rem;
     }
 
     .icon:hover {
         filter: drop-shadow(0px 3px 0px black);
         transition:0.5s ease-in-out;
+        font-size: 1.7rem;
+        color: wheat;
     }
 
     .buy-now:hover {
