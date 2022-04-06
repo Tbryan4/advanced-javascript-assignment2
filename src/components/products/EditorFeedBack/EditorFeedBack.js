@@ -3,8 +3,7 @@ import React from 'react';
 import {AiOutlineCloudUpload, AiOutlineCheckCircle} from "react-icons/ai"
 import {EditorFeedBackStyles,FeedBackMessage,FeedBack,FeedBackOption} from './styles'
 import { useNavigate } from 'react-router-dom';
-import { Fireworks } from 'fireworks-js/dist/react'
-
+import Confetti from 'react-confetti'
 
 import { Button } from 'ui/buttons';
 
@@ -18,7 +17,7 @@ function EditorFeedBack ({children,status,writeCompleted, ...props})  {
              !status?
              <>
                <FeedBack>
-               <Fireworks/>
+                 <Confetti/>
                <AiOutlineCheckCircle color='d9f99d' size="12rem"/>
                <FeedBackMessage>
                  Product Uploaded Successfully
